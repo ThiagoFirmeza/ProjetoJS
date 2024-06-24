@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Calculadora de IMC</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="app.js"></script>
 </head>
 <body>
-  <h1>Calculadora de IMC</h1>
-  <script src="script.js"></script>
+
+        <section id="section01">
+            <h1>Calculadora de IMC</h1>
+        </section>
+    
+        <div id="teste">
+            <section id="section02">
+                <h2>Insira seu peso em Kg</h2>
+            </section>
+        
+            <section id="section03">
+                <div class="classPeso" id="divPeso">
+                    <input type="number">
+                </div>
+            </section>
+        
+            <section id="section04">
+                <h2>Insira sua altura em metros</h2>
+            </section>
+        
+            <section id="section05">
+                <div class="classAltura" id="divAltura">
+                    <input type="number">
+                </div>
+            </section>
+        
+            <section id="section06">
+                <div>
+                    <button onclick="calcularIMC()">Calcular</button>
+                </div>
+            </section>
+        </div>
+
+    <section id="section07">
+        <ul>
+            <li>Abaixo do Peso: IMC abaixo de 18,5.</li>
+            <li>Peso Normal: IMC entre 18,5 e 24,9.</li>
+            <li>Sobrepeso: IMC entre 25 e 29,9.</li>
+            <li>Obesidade Grau I: IMC entre 30 e 34,9.</li>
+            <li>Obesidade Grau II: IMC entre 35 e 39,9.</li>
+            <li>Obesidade Grau III (Obesidade Mórbida): IMC 40 ou superior.</li>
+        </ul>
+
+        <div id="resultado"></div>
+    </section>
 </body>
 </html>
