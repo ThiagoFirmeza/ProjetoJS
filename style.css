@@ -1,0 +1,86 @@
+* {
+  margin: 5px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+
+h1 {
+  text-align: center;
+  color: #202020;
+}
+
+section {
+  background-color: rgb(165, 165, 165);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+input[type="number"],
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: black;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#resultado {
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  #teste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  #section03,
+  #section05 {
+    text-align: center;
+  }
+
+  #resultado ul {
+    padding-left: 15px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  #teste {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
